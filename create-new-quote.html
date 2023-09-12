@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles01.css">
+    <title>Create New Quote</title>
+</head>
+<body>
+    <h1>Create New Quote</h1>
+    <form id="create-quote-form">
+        <label for="order-date">Order Date:</label>
+        <input type="date" id="order-date" name="order-date" required><br>
+
+        <label for="customer">Customer Name/ID:</label>
+        <input type="text" id="customer" name="customer" required><br>
+
+        <label for="gst-no">GST No:</label>
+        <input type="text" id="gst-no" name="gst-no" required><br>
+
+        <label for="shipping-address">Shipping Address:</label>
+        <textarea id="shipping-address" name="shipping-address" required></textarea><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br>
+
+        <label for="phone-number">Phone Number:</label>
+        <input type="tel" id="phone-number" name="phone-number" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="pin-code">Pin Code:</label>
+        <input type="text" id="pin-code" name="pin-code" required><br>
+
+        <!-- Product Selection UI -->
+        <h2>Product Selection:</h2>
+        <label>
+            <input type="checkbox" name="products" value="Product 1"> Product 1
+        </label><br>
+        <label>
+            <input type="checkbox" name="products" value="Product 2"> Product 2
+        </label><br>
+        <label>
+            <input type="checkbox" name="products" value="Product 3"> Product 3
+        </label><br>
+        <!-- Add more product checkboxes as needed -->
+
+        <label for="shipping-cost">Shipping Cost:</label>
+        <input type="number" id="shipping-cost" name="shipping-cost" readonly><br>
+
+        <label for="total-order-value">Total Order Value:</label>
+        <input type="number" id="total-order-value" name="total-order-value" readonly><br>
+
+        <button type="submit">Create Quote</button>
+    </form>
+
+    <a href="create-new-quote.html">Create New Quote</a> <!-- Link to create a new quote -->
+    <a href="employee-dashboard.html">Back to Dashboard</a> <!-- Link to navigate back to the Employee Dashboard -->
+
+    <script src="script.js"></script>
+</body>
+</html>
